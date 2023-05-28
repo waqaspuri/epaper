@@ -1,1 +1,1 @@
-Laravel Project: ePaper for the newspaper ability to make the image mapping with select option. 
+Deployment to cP. 

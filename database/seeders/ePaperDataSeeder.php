@@ -14,15 +14,23 @@ class ePaperDataSeeder extends Seeder
      */
     public function run()
     {
-DB::table('epapers')->insert([
+        DB::table('epapers')->insert([
             [
                 'title' => 'Front Page',
                 'image' => 'placement.jpg',
                 'extra1' => null,
                 'map_id' => null,
             ],
-            // Add more sample data as needed
-        ]);
 
+         ]);
+
+            User::factory()->create([
+            'name' => 'ePaperUser',
+            'email' => 'admin@admin.admin',
+            'password' => bcrypt('admin@admin.admin'),
+            ]); 
+
+
+       
     }
 }

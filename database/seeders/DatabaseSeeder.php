@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-  
+        $this->call(ePaperDataFirst::class);
+        $this->call(UserBasic::class);
+
     }
 }

@@ -19,6 +19,7 @@ class UserBasic extends Seeder
             'name' => 'User',
             'email' => 'admin@admin.admin',
             'password' => bcrypt('admin@admin.admin'),
+            'role' => 'admin',
         ]);
     }
 }
